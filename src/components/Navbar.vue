@@ -11,19 +11,19 @@
             <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <router-link active-class="act" to="/home" class="nav-link rounded-3 hover me-1">Inicio</router-link>
+                        <router-link active-class="act" to="/home" class="nav-link hover me-1">Inicio</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link active-class="act" to="/about" class="nav-link rounded-3 hover me-1">¿Quiénes Somos?</router-link>
+                        <router-link active-class="act" to="/about" class="nav-link hover me-1">¿Quiénes Somos?</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/" class="nav-link rounded-3 hover me-1">Portafolio</router-link>
+                        <router-link to="/" class="nav-link hover me-1">Portafolio</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/" class="nav-link rounded-3 hover me-1">Servicios</router-link>
+                        <router-link to="/" class="nav-link hover me-1">Servicios</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/" class="nav-link rounded-3 hover me-1">Contacto</router-link>
+                        <router-link to="/" class="nav-link hover me-1">Contacto</router-link>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -47,6 +47,7 @@ export default {
     .hover:hover, .act{
         border: 1px solid #212529;
         background-color: #f8f9fa;
+        border-radius: 15px;
         color: #212529!important;
     }
     
