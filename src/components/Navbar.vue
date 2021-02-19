@@ -11,24 +11,24 @@
             <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <router-link to="/home" class="nav-link rounded-3 hover">Inicio</router-link>
+                        <router-link active-class="act" to="/home" class="nav-link rounded-3 hover me-1">Inicio</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/about" class="nav-link rounded-3 hover">¿Quiénes Somos?</router-link>
+                        <router-link active-class="act" to="/about" class="nav-link rounded-3 hover me-1">¿Quiénes Somos?</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link rounded-3 hover" href="#">Portafolio</a>
+                        <router-link to="/" class="nav-link rounded-3 hover me-1">Portafolio</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link rounded-3 hover" href="#">Servicios</a>
+                        <router-link to="/" class="nav-link rounded-3 hover me-1">Servicios</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link rounded-3 hover" href="#">Contacto</a>
+                        <router-link to="/" class="nav-link rounded-3 hover me-1">Contacto</router-link>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link rounded-3 hover" href="#"><i class="fas fa-sign-out-alt"></i> Login</a>
+                        <a class="nav-link hover login" href="#"><i class="fas fa-sign-out-alt"></i> Login</a>
                     </li>
                 </ul>
             </div>
@@ -44,11 +44,19 @@ export default {
 </script>
 
 <style>
-
-    .hover:hover {
-        background-color: #ccc;
+    .hover:hover, .act{
+        border: 1px solid #212529;
+        background-color: #f8f9fa;
+        color: #212529!important;
     }
-
+    
+    .login {
+        border: 1px solid #212529;
+        border-radius: 15px;
+        background-color: #212529;
+        color: #f8f9fa!important;
+    }
+    
     .size {
         width: 40px;
         height: 30px;

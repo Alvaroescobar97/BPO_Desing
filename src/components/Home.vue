@@ -45,7 +45,7 @@
         <div class="contacto-asesor">
           <h2>Contacta con un Asesor Comercial</h2>
           <h3>Llama a las lineas:</h3>
-          <p class="mt-3"><i class="fs-3 fas fa-phone-alt align-middle pe-3"></i>310 419 63 48 - 320 776 49 32</p>
+          <p class="mt-3 align-middle fs-3"><i class="fs-3 fas fa-phone-alt me-3 telefono"></i>310 419 63 48 - 320 776 49 32</p>
         </div>
       </div>
 
@@ -169,6 +169,15 @@ export default {
   text-align: center;
   background-color: black;
   color: white;
+}
+
+.telefono{
+  background-color: #ee1b24;
+  text-align: center;
+  padding: 12px 8px;
+  width: 55px;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 
 @media (min-width: 992px) {
